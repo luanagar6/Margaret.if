@@ -100,7 +100,7 @@ function resultado() {
       <h4>Profissões</h4><ul>${d.profissoes.map(x => `<li>${x}</li>`).join("")}</ul>
       <h4>Cursos para explorar</h4><ul>${d.cursos.map(x => `<li>${x}</li>`).join("")}</ul>
       <h4>Mulheres inspiradoras</h4><ul>${d.mulheres.map(x => `<li>${x}</li>`).join("")}</ul>
-      <a class="mais" href="index.html#${a}">Ver esta área no Margaret.if</a></article>`;
+      <a class="mais" href="index_1.html#${a}">Ver esta área no Margaret.if</a></article>`;
   }).join("");
   mostrar("resultado");
 }
