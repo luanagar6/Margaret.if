@@ -486,6 +486,7 @@
       /* ====== DADOS: edite aqui para adicionar áreas, mulheres, fotos, vídeos e artigos ======
    foto: URL da imagem (deixe "" para usar o placeholder). Sugestão de fonte: Wikimedia Commons.
    video.id: só o código do YouTube (ex.: em youtube.com/watch?v=ABC123 o id é ABC123). Deixe "" para o placeholder. */
+<<<<<<< Updated upstream
       const DADOS = {
         missao:
           "Margaret.if é um jornal feito por estudantes do IFSP Jacareí para mostrar que mulheres sempre fizeram ciência e que meninas de hoje podem seguir esse caminho.",
@@ -644,6 +645,52 @@
           },
         ],
       };
+=======
+const DADOS = {
+  missao: "Margaret.if é um jornal feito por estudantes do IFSP Jacareí para mostrar que mulheres sempre fizeram ciência e que meninas de hoje podem seguir esse caminho.",
+  equipe: ["Luana Garcez", "Leonardo Fonseca", "Mateus Buchalla", "Rafael Kobrem", "... Buchalla"],
+  categorias: [
+    { id:"Computação", nome:"Software e projetos", icone:"⚙️", resumo:"Computação, software e projetos",
+      pessoas:[
+        { nome:"Ada Lovelace", anos:"1815–1852", foto:"https://s2-techtudo.glbimg.com/7YOBBhghbMF9wsUuBP7UcUh2yXI=/0x342:2439x2307/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/n/3/FbrmyhQneVYWGUPIe8vA/adalovelace.jpg", credito:"Crédito: TechTudo / Globo",
+          /* REVISAR TEXTO */
+          texto:"Matemática inglesa que escreveu notas sobre a Máquina Analítica de Charles Babbage. Nelas, descreveu um algoritmo para calcular números de Bernoulli, por isso é considerada a primeira programadora da história. Também imaginou que máquinas poderiam ir além de cálculos." },
+        { nome:"Margaret Hamilton", anos:"1936-", foto:"https://s2-galileu.glbimg.com/ZMdzAyLFiClGlHUhMQo-nNfw0m4=/0x0:2294x1455/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2026/d/Z/6Gn2HDTU65p2KjXcSxAQ/margaret-hamilton-restoration.jpg", credito:"Crédito: Revista Galileu / O Globo ",
+          /* REVISAR TEXTO: troque pela outra mulher que vocês escolheram, se for o caso */
+          texto:"Cientista da computação americana que liderou a equipe do software de bordo das missões Apollo, da NASA. Ajudou a consolidar o termo \"engenharia de software\" e recebeu a Medalha Presidencial da Liberdade em 2016." }
+      ],
+      video:{ id:"J3AAMU3FeTwJ6AvI", titulo:"Como é ser uma mulher na TI?", profissional:"[Nome da profissional]" },
+      artigos:[ {t:"Mulheres na computação: onde estamos hoje", r:"[Resumo gerado/filtrado por IA]", u:"#"}, {t:"Como começar a programar", r:"[Resumo gerado/filtrado por IA]", u:"#"} ] },
+    { id:"sociais", nome:"Ciências Sociais", icone:"🧠", resumo:"Mente, sociedade e cuidado",
+      pessoas:[ { nome:"Nise da Silveira", anos:"1905–1999", foto:"https://tvtnews.com.br/wp-content/uploads/2025/02/120-anos-de-Nise-da-Silveira-e-celebrado-com-trilogia-no-Itau-Cultural-Play.jpg", credito:"Crédito: Acervo Itaú Cultural / TVT News",
+          /* REVISAR TEXTO */
+          texto:"Psiquiatra brasileira, nascida em Maceió. Contrária a tratamentos violentos como a lobotomia e o eletrochoque, criou no Rio de Janeiro ateliês de pintura e modelagem para pacientes e fundou o Museu de Imagens do Inconsciente. Também introduziu animais como coterapeutas." },
+        { nome: "Sueli Carneiro", anos : "1950-", foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9a90Fzc5G0grt0716H03qIBI1z-vaKteQL8iu8s7bMw&s=10", credito: "Crédito: Blog / Afrofile",
+          /* REVISAR TEXTO */
+          texto: "Filósofa, escritora e ativista antirracista do movimento social negro brasileiro, nascida na cidade de São Paulo. Doutora em Filosofia pela USP e fundadora do GELEDÉS – Instituto da Mulher Negra, ela é considerada uma das mais relevantes pensadoras do feminismo negro no Brasil." } ],
+      video:{ id:"", titulo:"O trabalho de quem estuda a mente e a sociedade", profissional:"[Nome da profissional]" },
+      artigos:[ {t:"Saúde mental e arte", r:"[Resumo gerado/filtrado por IA]", u:"#"}, {t:"Nise da Silveira e a reforma psiquiátrica", r:"[Resumo gerado/filtrado por IA]", u:"#"} ] },
+    { id:"biologicas", nome:"Ciências Biológicas", icone:"🧬", resumo:"Vida, saúde e pesquisa",
+      pessoas:[ { nome:"Tatiana Sampaio", anos:"1966-", foto:"https://s2-oglobo.glbimg.com/qB9c8kP7Y260Rtp66uh-KDK0IxM=/0x0:1680x1120/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/e/n/rrImxJQs2pevla5NGpUQ/112362971-saude-exclusivo-rio-de-janeiro-rj-15-09-2025-pesquisadora-tatiana-sampaio-chefe-do-laborat-1-.jpg", credito:"Crédito: Reprodução / Globo",
+          /* REVISAR TEXTO: confira as informações antes de publicar */
+          texto:"Pesquisadora brasileira da Universidade Federal do Rio de Janeiro (UFRJ), que estuda tratamentos para lesões na medula espinhal. Seu trabalho com a proteína polilaminina chamou a atenção da comunidade científica e mostra o impacto da pesquisa feita em universidades públicas." },
+                { nome: "Marie Curie", anos: "1867–1934", foto: "https://www.saopauloinfoco.com.br/wp-content/uploads/2022/01/Marie-Curie-a-polonesa-mais-brilhante-da-historia.png", credito: "Crédito: Blog / São Paulo In Foco",
+                  /* REVISAR TEXTO */
+                  texto: "Descobridora do Polônio e o Rádio, foi a primeira mulher a fazer doutorado na França, ganhou dois prêmios Nobel e virou a cientista mais conhecida da história." } ],
+      video:{ id:"", titulo:"Bastidores da pesquisa em biologia", profissional:"[Nome da profissional]" },
+      artigos:[ {t:"Pesquisa em lesão medular no Brasil", r:"[Resumo gerado/filtrado por IA]", u:"#"}, {t:"Mulheres nas ciências da vida", r:"[Resumo gerado/filtrado por IA]", u:"#"} ] },
+    { id:"cultura", nome:"Cultura e Arte", icone:"🎸", resumo:"Criar também é inovar",
+      pessoas:[ { nome:"Sister Rosetta Tharpe", anos:"1915–1973", foto:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dChozlAU0U4ZR5RJ6_E2Q7zkFFKcvTOHiYe8dr-Vvw&s=10", credito:"Crédito: Blog / CLM",
+          /* REVISAR TEXTO. Para incluir a outra artista, copie este bloco e preencha */
+          texto:"Cantora e guitarrista americana de gospel que levou a guitarra elétrica e uma pegada vigorosa aos palcos nos anos 1930 e 1940. Influenciou nomes do rock e é chamada de \"madrinha do rock and roll\". Entrou para o Rock and Roll Hall of Fame em 2018." },
+          {nome: "Marina Abramovic", anos: "1946-", foto: "https://midias.correiobraziliense.com.br/_midias/png/2023/10/29/675x450/1_fc3cf110_621d_11ee_8c41_6b45927f204c-30557924.png?20231029203441?20231029203441", credito: "Crédito: Blog / Arte Brasil",
+            /* REVISAR TEXTO */
+            texto: "Considerada a “avó da arte de performance”, Marina Abramović é uma das mais relevantes e icônicas artistas do mundo. Em seu trabalho, aborda as relações entre o artista e a plateia, as fronteiras do corpo e o potencial da mente." } ],
+      video:{ id:"", titulo:"Música e criação no dia a dia", profissional:"[Nome da profissional]" },
+      artigos:[ {t:"Mulheres que mudaram a música", r:"[Resumo gerado/filtrado por IA]", u:"#"}, {t:"Arte e tecnologia", r:"[Resumo gerado/filtrado por IA]", u:"#"} ] }
+  ]
+};
+>>>>>>> Stashed changes
 
       /* ====== RENDERIZAÇÃO ====== */
       const $ = (s) => document.querySelector(s);
