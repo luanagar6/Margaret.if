@@ -1,3 +1,16 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index_1.html'));
+});
+
+app.get('/quiz', (req, res) => {
+  res.sendFile(__dirname + '/public/quiz.html');
+});
+
+module.exports = app;
