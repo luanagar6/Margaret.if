@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz – Qual área da ciência combina com você? | Margaret.if</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="index.html">Margaret<span>.if</span></a>
+        <nav aria-label="Principal">
+          <a href="index.html">Início</a><a href="index.html#areas">Áreas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="intro">
+        <h1>Qual área da ciência combina com você?</h1>
+        <p class="sub">
+          Responda 6 perguntas rápidas. Não existe resposta certa: o quiz mostra
+          várias áreas que podem te interessar e explica por quê.
+        </p>
+        <button class="btn" id="comecar">Começar o quiz</button>
+      </section>
+
+      <section id="quiz" hidden aria-live="polite">
+        <div class="barra" aria-hidden="true"><div id="progresso"></div></div>
+        <p id="contador" class="sub"></p>
+        <form id="pergunta"></form>
+        <button class="btn-sec" id="voltar" type="button">Voltar</button>
+      </section>
+
+      <section id="resultado" hidden aria-live="polite">
+        <h2 id="res-titulo"></h2>
+        <p class="sub" id="res-sub"></p>
+        <div id="res-lista"></div>
+        <button class="btn" id="refazer" type="button">Refazer o quiz</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>
+          Margaret.if, projeto do HackaIF "Ciência Delas", IFSP Campus Jacareí.
+        </p>
+      </div>
+    </footer>
+    <script src="quiz.js"></script>
+  </body>
+</html>
