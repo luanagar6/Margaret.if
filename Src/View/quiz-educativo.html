@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Educativo | Margaret.if</title>
+    <link rel="stylesheet" href="../Styles/quiz-educativo.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="container menu">
+        <a class="logo" href="index_1.html">
+          Margaret<span>.if</span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+          <a href="index_1.html">Início</a>
+          <a href="index_1.html#areas">Áreas</a>
+          <a href="quiz.html">Quiz de personalidade</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container principal">
+      <section class="introducao" id="inicio">
+        <span class="etiqueta">Aprenda brincando</span>
+        <h1>Quiz Educativo</h1>
+        <p>
+          Descubra curiosidades sobre mulheres que fizeram história e teste
+          seus conhecimentos sobre ciência, tecnologia, sociedade e cultura.
+        </p>
+      </section>
+
+      <section id="categorias" aria-labelledby="titulo-categorias">
+        <h2 id="titulo-categorias">Escolha uma categoria</h2>
+        <p class="descricao">
+          Cada quiz tem cinco perguntas. Não precisa ser especialista:
+          aprenda uma coisa nova a cada resposta!
+        </p>
+
+        <div class="grade-categorias">
+          <button class="categoria computacao" data-categoria="computacao">
+            <span class="emoji" aria-hidden="true">💻</span>
+            <span class="nome-categoria">Computação</span>
+            <span class="detalhe">Programação e tecnologia</span>
+          </button>
+
+          <button class="categoria biologia" data-categoria="biologia">
+            <span class="emoji" aria-hidden="true">🧬</span>
+            <span class="nome-categoria">Biologia</span>
+            <span class="detalhe">Vida e pesquisa científica</span>
+          </button>
+
+          <button class="categoria sociais" data-categoria="sociais">
+            <span class="emoji" aria-hidden="true">🧠</span>
+            <span class="nome-categoria">Ciências Sociais</span>
+            <span class="detalhe">Pessoas e sociedade</span>
+          </button>
+
+          <button class="categoria cultura" data-categoria="cultura">
+            <span class="emoji" aria-hidden="true">🎨</span>
+            <span class="nome-categoria">Cultura e Arte</span>
+            <span class="detalhe">Música e expressão artística</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="area-quiz" class="painel" hidden>
+        <button id="voltar-categorias" class="botao-voltar" type="button">
+          ← Escolher outra categoria
+        </button>
+
+        <div class="informacoes-quiz">
+          <p id="nome-quiz" class="etiqueta"></p>
+          <p id="contador" class="contador"></p>
+        </div>
+
+        <div
+          class="barra-progresso"
+          role="progressbar"
+          aria-label="Progresso do quiz"
+          aria-valuemin="0"
+          aria-valuemax="5"
+          aria-valuenow="0"
+          id="barra"
+        >
+          <div id="progresso"></div>
+        </div>
+
+        <h2 id="pergunta"></h2>
+
+        <div id="alternativas" class="alternativas"></div>
+
+        <div id="feedback" class="feedback" role="status" hidden>
+          <h3 id="feedback-titulo"></h3>
+          <p id="feedback-texto"></p>
+        </div>
+
+        <button id="proxima" class="botao-principal" type="button" hidden>
+          Próxima pergunta
+        </button>
+      </section>
+
+      <section id="resultado" class="painel resultado" hidden>
+        <span class="emoji" aria-hidden="true">🌟</span>
+        <h2 id="resultado-titulo">Quiz concluído!</h2>
+        <p id="pontuacao" class="pontuacao"></p>
+        <p id="mensagem-resultado"></p>
+
+        <div class="acoes-resultado">
+          <button id="tentar-novamente" class="botao-principal" type="button">
+            Tentar novamente
+          </button>
+          <button id="outra-categoria" class="botao-secundario" type="button">
+            Escolher outra categoria
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Margaret.if — Projeto do HackaIF, temática Ciência Delas,
+          IFSP Campus Jacareí.
+        </p>
+        <a href="index_1.html">Voltar ao site principal</a>
+      </div>
+    </footer>
+
+    <script src="../Scripts/quiz-educativo.js"></script>
+  </body>
+</html>
