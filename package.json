@@ -1,8 +1,8 @@
-{
+﻿{
   "name": "margaret.if",
   "version": "1.0.0",
   "description": "",
-  "main": "quiz.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/luanagar6/Margaret.if#readme",
   "dependencies": {
-    "express": "^5.3.0",
-    "path": "^0.12.7"
+    "express": "^5.3.0"
   }
 }
+
