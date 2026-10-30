@@ -13,4 +13,8 @@ app.get('/quiz', (req, res) => {
   res.sendFile(__dirname + '/public/quiz.html');
 });
 
+app.get('/quiz-educativo', (req, res) => {
+  res.sendFile(__dirname + '/public/quiz-educativo.html');
+});
+
 module.exports = app;
