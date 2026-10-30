@@ -40,7 +40,7 @@ O Margaret.if busca abranger diferentes áreas:
 - **Artes e Cultura:** música, literatura, cinema e artes visuais.
 - **Meio Ambiente:** ecologia, sustentabilidade e conservação.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 O desenvolvimento da plataforma utiliza:
 
